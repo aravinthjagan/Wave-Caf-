@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wave - Reservation</title>
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'Tittle.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            .logo img {
+                width: 15vh;
+                height: 80px;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .logo {
+                cursor: pointer;
+            }
+            nav {
+                padding: 0 33px;
+                height: 80px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            nav ul {
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a {
+                font-size: 22px;
+                font-family: Lobster Two;
+                padding: 7px 13px;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            nav a:hover{
+                color: orange;
+            }
+            header {
+                width: 100%;
+                height: 80vh;
+                background: url(static/Front.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content {
+                margin-bottom: 20px;
+                color: whitesmoke;
+                text-align: center;
+            }
+            .header-content img{
+                height: 20vh;
+                align-items: center;
+            }
+            .header-content h1 {
+                font-size: 7vmin;
+                font-family: Platypi;
+                color: whitesmoke;
+            }
+            .header-content h3 {
+                font-size: 30px;
+                font-family: Satisfy;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 {
+                margin-top: 10px;
+                font-size: 20px;
+                font-family: Raleway;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .header-content h4 a:hover {
+                color: orange;
+            }
+            section {
+                width: 80%;
+                margin: 80px auto;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .row .col {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                border: 5px solid goldenrod;
+                border-radius: 30px;
+                width: 250px;
+                height: 30vh;
+            }
+            .row .col img {
+                width: 70%;
+                opacity: 0.4;
+            }
+            .events .row {
+                margin-top: 10px;
+            }
+            .col h3 {
+                align-items: center;
+                justify-content: center;
+                font-size: 3vmin;
+                color: black;
+            }
+            .reservation {
+                width: 100%;
+                height: 110vh;
+                background: url(static/Table.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+            }
+            .topic h1 {
+                margin-top: 50px;
+                font-size: 10vh;
+                margin-right: 120px;
+                font-family: Rubik;
+                color: orange;
+                text-align: center;
+                align-items: center;
+            }
+            .topic h3 {
+                font-size: 18px;
+                font-family: Noto Serif;
+                margin-left: 60px;
+                color: white;
+                padding-top: 50px;
+            }
+            .reservation-form {
+                width: 70vh;
+                height: 100vh;
+                margin-top: 5vh;
+                margin-left: 80px;
+                background-color: white;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .form-field {
+                padding: 3px;
+                margin-bottom: 10px;
+            }
+            .form-field label {
+                color: black;
+                font-size: larger;
+                font-family: Raleway;
+                display: block;
+            }
+            .form-field input {
+                width: 60vh;
+                height: 4vh;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid orange;
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .form-field select {
+                width: 60vh;
+                height: 4vh;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid orange;
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .form-field textarea {
+                width: 60vh;
+                height: 8vh;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid orange;
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .submit-button {
+                width: 60vh;
+                height: 6vh;
+                color: whitesmoke;
+                background-color: brown;
+                border: 3px solid gold;
+                border-radius: 4px;
+                padding: 5px;
+                text-align: center;
+                justify-content: center;
+                display: inline-block;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .touch {
+                width: 100%;
+                height: 30vh;
+                text-align: center;
+                margin-top: 15vh;
+                padding: 20px;
+            }
+            .touch h1 {
+                font-family: Dancing Script;
+            }
+            .touch a {
+                font-family: Dancing Script;
+                color: brown;
+            }
+            .touch button {
+                width: 30vh;
+                height: 8vh;
+                font-size: 30px;
+                margin-top: 20px;
+                background-color: transparent;
+                border: 4px solid orange;
+                border-radius: 10px;
+            }
+            .floating {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease-out;
+            }
+            .floating:hover {
+                transform: translateY(-10px);
+                background-color: #444;
+            }
+            .floating img {
+                width: 30px;
+                height: 30px;
+            }
+            footer {
+                width: 100%;
+                height: 90vh;
+                background: url(static/Footer_bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            footer img {
+                width: 20vh;
+                height: 15vh;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .details {
+                margin-left: 100px;
+                display: flex;
+            }
+            .contact {
+                font-size: 20px;
+                margin-left: 100px;
+                color: whitesmoke;
+            }
+            .contact img {
+                width: 70px;
+                height: 70px;
+                margin-left: 80px;
+            }
+            .contact h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .contact h5 {
+                font-family: PT Sans;
+                margin-top: 30px;
+            }
+            .home {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .home img {
+                width: 70px;
+                height: 70px;
+            }
+            .home h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .home h5 {
+                font-family: PT Sans;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .home a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .location {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .location img {
+                width: 70px;
+                height: 70px;
+            }
+            .location h2 {
+                margin-top: 50px;
+                margin-left: 5px;
+                font-size: 25px;
+            }
+            .social_icon {
+                display: flex;
+                margin-top: 20px;
+                margin-right: 150px;
+                align-items: center;
+                justify-content: center;
+            }
+            .social_icon img {
+                width: 30px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index"><img src="{% static 'Logo.png' %}" alt=""></a>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="menu">Menu</a></li>
+                        <li><a href="reservation">Reservation</a></li>
+                        <li><a href="contact_us">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header>
+            <div class="header-content">
+                <h1>Reservation</h1>
+                <h3>-- Book your Table. --</h3>
+                <h4><a href="index">Home  </a> / Reservation</h4>
+            </div>
+        </header>
+        <section>
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'Lunch.png' %}" alt="">
+                    <h3>Lunch</h3>
+                </div>
+                <div class="col">
+                    <img src="{% static 'Coffee cup.png' %}" alt="">
+                    <h3>Snack</h3>
+                </div>
+                <div class="col">
+                    <img src="{% static 'Dinner.png' %}" alt="">
+                    <h3>Dinner</h3>
+                </div>
+                <div class="col">
+                    <img src="{% static 'Dessert.png' %}" alt="">
+                    <h3>Dessert</h3>
+                </div>
+            </div>
+        </section>
+        <div class="reservation">
+            <div class="topic col-lg-6">
+                <h1>Book Your <br>Table Now!!</h1>
+                <h3>Experience the best of the wave with 15% off! Whether you're<br> looking for a quick bite, a relaxing brunch, or a midday<br> pick-me-up, we've got you covered.</h3>
+            </div>
+            <div class="reservation-form col-lg-6">
+                <form action="addData" method="POST">
+                    {% csrf_token %}
+                    <div class="form-field">
+                        <label for="name">Full Name *</label>
+                        <input type="text" name="fname" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="person">Number of Persons *</label>
+                        <input type="number" name="person" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="mail">Email *</label>
+                        <input type="email" name="mail" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="date">Date *</label>
+                        <input type="date" name="date" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="time">Choose your Time *</label>
+                        <input type="time" name="time" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" name="phone" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="plan">Plan for *</label>
+                        <select id="plan" name="plan" required>
+                            <option value="Afternoon">Afternoon</option>
+                            <option value="Evening">Evening</option>
+                            <option value="Dinner">Dinner</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="occasion">Occasion *</label>
+                        <select id="occasion" name="occasion" required>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Gettogether">Get Together</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="special">Any Special Request?</label>
+                        <textarea id="special" name="special"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="submit-button" type="submit">Reserve Your Table Now</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <div class="touch">
+            <h1>COME & <b style="color: orange;">EXPERIENCE</b> OUR BEST OF DELICIOUS CUSINE.</h1>
+            <button><a href="contact">Get In Touch!!</a></button>
+        </div>
+        <div class="floating">
+            <a href="https://web.whatsapp.com/" class="floating-icon">
+                <img src="{% static 'Whatsapp.png' %}" alt="">
+            </a>
+        </div>
+        <footer>
+            <img src="{% static 'Logo.png' %}" alt="">
+            <div class="details">
+                <div class="contact col-md-4">
+                    <img src="{% static 'Mail.png' %}" alt="">
+                    <h2>Contact Details</h2>
+                    <h5>14/169E, Elayamuthur Pirivu,<br>
+                        Govt. Arts College Road,<br>
+                        Udumalpet - 642126</h5>
+                    <h5>aravinthjagan2309@gmail.com</h5>
+                    <h5>+91-6383734427</h5>
+                </div>
+                <div class="home col-md-4">
+                    <img src="{% static 'Menu.png' %}" alt="">
+                    <h2>Menu</h2>
+                    <h5><a href="contact_us">Contact</a></h5>
+                    <h5><a href="reservation">Reservation</a></h5>
+                    <h5><a href="menu">Menu</a></h5>
+                    <h5><a href="about">About</a></h5>
+                    <h5><a href="index">Home</a></h5>
+                </div>
+                <div class="location col-md-4">
+                    <img src="{% static 'Location.png' %}" alt="">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.64742185585!2d77.23837396826826!3d10.566704441800267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzA2LjMiTiA3N8KwMTQnMjEuNSJF!5e0!3m2!1sen!2sin!4v1713159985872!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="social_icon">
+                <a href="https://web.whatsapp.com/"><img src="{% static 'Whatsapp.png' %}" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'Instagram.png' %}" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'Facebook.png' %}" alt=""></a>
+            </div>
+        </footer>
+    </body>
+</html>

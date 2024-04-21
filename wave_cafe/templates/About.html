@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wave - About</title>
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'Tittle.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .logo {
+                cursor: pointer;
+            }
+            .logo img {
+                width: 15vh;
+                height: 80px;
+            }
+            nav {
+                padding: 0 33px;
+                height: 80px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            nav ul {
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a {
+                font-size: 22px;
+                font-family: Lobster Two;
+                padding: 7px 13px;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            nav ul li a:hover {
+                color: orange;
+            }
+            header {
+                width: 100%;
+                height: 80vh;
+                background: url(static/Front.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content {
+                color: whitesmoke;
+                text-align: center;
+            }
+            .header-content img{
+                height: 20vh;
+                align-items: center;
+            }
+            .header-content h1 {
+                font-size: 7vmin;
+                font-family: Platypi;
+                color: whitesmoke;
+            }
+            .header-content h3 {
+                font-size: 30px;
+                margin-top: 10px;
+                font-family: Satisfy;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 {
+                margin-top: 10px;
+                font-size: 20px;
+                display: flex;
+                font-family: Raleway;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .header-content h4 a:hover {
+                color: orange;
+            }
+            section {
+                width: 100%;
+                height: 82vh;
+                background: url(static/Icecream.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .about {
+                width: 70vh;
+                height: 52vh;
+                float: right;
+                margin-top: 50px;
+                margin-right: 100px;
+            }
+            .about h4 {
+                font-size: 25px;
+                color: darkblue;
+            }
+            .about h1 {
+                font-size: 30px;
+                margin-top: 20px;
+                color: orange;
+                text-shadow: 2px 2px black;
+            }
+            .about h2 {
+                font-family: Dancing Script;
+                font-size: 30px;
+                margin-top: 20px;
+                text-shadow: 2px 2px orange;
+            }
+            .about h3 {
+                font-family: Dosis;
+                margin-top: 20px;
+                color: brown;
+            }
+            .why {
+                width: 100%;
+                height: 100vh;
+                background: url(static/Cupcake.png);
+                background-position: center;
+                background-size: cover;
+            }
+            .why h1 {
+                padding-top: 50px;
+                margin-left: 350px;
+                font-size: 8vmin;
+                font-family: Platypi;
+                color: whitesmoke;
+            }
+            .why h3 {
+                width: 55%;
+                color: whitesmoke;
+                font-family: Lato;
+                margin-top: 40px;
+                margin-left: 60px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .point {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point img {
+                width: 20px;
+                height: 20px;
+            }
+            .point h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point2 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point2 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point2 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point3 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point3 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point3 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point4 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point4 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point4 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point5 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point5 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point5 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point6 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point6 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point6 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .point7 {
+                font-family: Nunito;
+                display: flex;
+                margin-top: 40px;
+                margin-left: 200px;
+            }
+            .point7 img {
+                width: 20px;
+                height: 20px;
+            }
+            .point7 h4 {
+                padding-left: 10px;
+                color: whitesmoke;
+            }
+            .floating {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease-out;
+            }
+            .floating:hover {
+                transform: translateY(-10px);
+                background-color: #444;
+            }
+            .floating img {
+                width: 30px;
+                height: 30px;
+            }
+            footer {
+                width: 100%;
+                height: 90vh;
+                background: url(static/Footer_bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                align-items: center;
+                justify-content: center;
+            }
+            footer img {
+                width: 20vh;
+                height: 15vh;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .details {
+                margin-left: 100px;
+                display: flex;
+            }
+            .contact {
+                font-size: 20px;
+                margin-left: 100px;
+                color: whitesmoke;
+            }
+            .contact img {
+                width: 70px;
+                height: 70px;
+                margin-left: 80px;
+            }
+            .contact h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .contact h5 {
+                font-family: PT Sans;
+                font-size: 18px;
+                margin-top: 30px;
+            }
+            .home {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .home img {
+                width: 70px;
+                height: 70px;
+            }
+            .home h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .home h5 {
+                font-family: PT Sans;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .home a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .location {
+                font-size: 20px;
+                margin-left: 250px;
+                color: whitesmoke;
+            }
+            .location img {
+                width: 70px;
+                height: 70px;
+            }
+            .location h2 {
+                margin-top: 50px;
+                margin-left: 5px;
+                font-size: 25px;
+            }
+            .social_icon {
+                display: flex;
+                margin-top: 20px;
+                margin-right: 150px;
+                align-items: center;
+                justify-content: center;
+            }
+            .social_icon img {
+                width: 30px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index"><img src="{% static 'Logo.png' %}" alt=""></a>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="menu">Menu</a></li>
+                        <li><a href="reservation">Reservation</a></li>
+                        <li><a href="contact_us">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header>
+            <div class="header-content">
+                <h1>ABOUT US</h1>
+                <h3>-- Where we all start. --</h3>
+                <h4><a href="index">Home  </a> / About Us </h4>
+            </div>
+        </header>
+        <section>
+            <div class="about">
+                <h4>About The Wave</h4>
+                <h1>Explore More About Us</h1>
+                <h3>The Wave is the biggest food sensation that's taking India by storm with its rapid expansion. The Wave is
+                    go-to destination for a cozy ambience experience, offering not just  great food  but also a warm and inviting
+                    atmosphere with a large no of seating capacity. The most happening food chain and growing food brand 
+                    passionately committed to delivering exceptional culinary experience through our exquisite range of 
+                    food products. With an unwavering dedication to quality, sustainability and customer statisfaction, we 
+                    strive to redefine the way people experience food.
+                </h3>
+                <br>
+                <h3>The Wave is focused on a hybird kitchen with key focus on creating good online presence as well as 
+                    diversifying our product mix to enhance the guest experience. The Wave offers you quality food at
+                    the most affordable prices along with same of the sassiest flavours around the town.
+                </h3>
+                <h2>Aravinth J</h2>
+            </div>
+        </section>
+        <div class="why">
+            <h1>WHY US!!</h1>
+            <h3>Choose The Wave for an unparelleled dining experience. We pride ourselves on serving flavorful, high-quality dishes
+                prepared with fresh, locally sourced ingredients. WIth a passion for culinary excellence, warm hospitality, and a 
+                vibrant atmosphere, we create unforgettable moments that statisfy both the plate and soul. Indulge in our innovative  
+                menu and let us take you on a journey of taste and gastronomic delight.
+            </h3>
+            <div class="point">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Streamlined supply chain management for increased efficiency.</h4>
+            </div>
+            <div class="point2">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Robust manpower support to ensure smooth operations.</h4>
+            </div> 
+            <div class="point3">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Centralized operations management for streamlined processes.</h4>
+            </div>
+            <div class="point4">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Leveraging IT-backed systems for enhanced productivity.</h4>
+            </div>
+            <div class="point5">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Effective inventory control measures in place.</h4>
+            </div>
+            <div class="point6">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Offering the largest menu among cafe.</h4>
+            </div>
+            <div class="point7">
+                <img src="{% static 'Spoon_Icon.png' %}" alt="">
+                <h4>Dedicated franchise relationship manager for personalized support.</h4>
+            </div>
+        </div>
+        <div class="floating">
+            <a href="https://web.whatsapp.com/" class="floating-icon">
+                <img src="{% static 'Whatsapp.png' %}" alt="">
+            </a>
+        </div>
+        <footer>
+            <img src="{% static 'Logo.png' %}" alt="">
+            <div class="details">
+                <div class="contact col-md-4">
+                    <img src="{% static 'Mail.png' %}" alt="">
+                    <h2>Contact Details</h2>
+                    <h5>14/169E, Elayamuthur Pirivu,<br>
+                        Govt. Arts College Road,<br>
+                        Udumalpet - 642126</h5>
+                    <h5>aravinthjagan2309@gmail.com</h5>
+                    <h5>+91-6383734427</h5>
+                </div>
+                <div class="home col-md-4">
+                    <img src="{% static 'Menu.png' %}" alt="">
+                    <h2>Menu</h2>
+                    <h5><a href="contact_us">Contact</a></h5>
+                    <h5><a href="reservation">Reservation</a></h5>
+                    <h5><a href="menu">Menu</a></h5>
+                    <h5><a href="about">About</a></h5>
+                    <h5><a href="index">Home</a></h5>
+                </div>
+                <div class="location col-md-4">
+                    <img src="{% static 'Location.png' %}" alt="">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.64742185585!2d77.23837396826826!3d10.566704441800267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzA2LjMiTiA3N8KwMTQnMjEuNSJF!5e0!3m2!1sen!2sin!4v1713159985872!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="social_icon">
+                <a href="https://web.whatsapp.com/"><img src="{% static 'Whatsapp.png' %}" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'Instagram.png' %}" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'Facebook.png' %}" alt=""></a>
+            </div>
+        </footer>
+    </body>
+</html>

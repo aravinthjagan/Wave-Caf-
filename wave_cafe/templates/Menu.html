@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wave - Menu</title>
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'Tittle.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .logo {
+                cursor: pointer;
+            }
+            .logo img {
+                width: 15vh;
+                height: 80px;
+            }
+            nav {
+                padding: 0 33px;
+                height: 80px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            nav ul {
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a {
+                font-size: 22px;
+                font-family: Lobster Two;
+                padding: 7px 13px;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            nav ul li a:hover {
+                color: orange;
+            }
+            .header-content {
+                color: whitesmoke;
+                text-align: center;
+            }
+            .header-content h1 {
+                font-size: 7vmin;
+                font-family: Platypi;
+                color: whitesmoke;
+            }
+            .header-content h3 {
+                font-size: 30px;
+                margin-top: 20px;
+                font-family: Satisfy;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 {
+                margin-top: 10px;
+                font-size: 20px;
+                font-family: Raleway;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h4 a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .header-content h4 a:hover {
+                color: orange;
+            }
+            header {
+                width: 100%;
+                height: 80vh;
+                background: url(static/Front.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            section {
+                width: 100%;
+                height: 115vh;
+                background: url(static/Dessert_pie.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .desserts {
+                width: 50%;
+                height: 115vh;
+                float: right;
+                background: url(static/Background.png);
+                border: none;
+                display: flex;
+            }
+            .list h1 {
+                font-size: 30px;
+                font-family: Lexend;
+                padding-top: 20px;
+                margin-left: 230px;
+            }
+            .list h3 {
+                font-family: Pacifico;
+                color: whitesmoke;
+                padding-top: 10px;
+                margin-left: 30px;
+            }
+            .list h5 {
+                font-family: Cormorant Garamond;
+                padding-top: 10px;
+                margin-left: 30px;
+            }
+            .price {
+                padding-top: 15px;
+                margin-left: 20px;
+                margin-right: 30px;
+            }
+            .price h3 {
+                font-family: Crimson Pro;
+                padding-top: 60px;
+            }
+            .container {
+                width: 100%;
+                height: 77vh;
+                background: url(static/Pizza.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .menu {
+                width: 50%;
+                height: 77vh;
+                background: url(static/Background.png);
+                border: none;
+                display: flex;
+            }
+            .pizza {
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .pizza h1 {
+                margin-left: 20px;
+                font-family: Lexend;
+            }
+            .pizza h3 {
+                font-family: Pacifico;
+                color: whitesmoke;
+                margin-top: 10px;
+                text-align: left;
+            }
+            .pizza_price {
+                margin-top: 48px;
+                margin-left: 20px;
+            }
+            .pizza_price h3 {
+                font-family: Crimson Pro;
+                margin-top: 21px;
+            }
+            .burger {
+                margin-top: 10px;
+                margin-left: 60px;
+            }
+            .burger h1 {
+                margin-left: 30px;
+                font-family: Lexend;
+            }
+            .burger h3 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+                text-align: left;
+            }
+            .burger_price {
+                margin-top: 48px;
+            }
+            .burger_price h3 {
+                margin-top: 21px;
+            }
+            .container-fluid {
+                width: 100%;
+                height: 67vh;
+                background: url(static/Momos.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .menu2 {
+                width: 50%;
+                height: 67vh;
+                display: flex;
+                background: url(static/Background.png);
+                border: none;
+                float: right;
+            }
+            .momo {
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .momo h1 {
+                margin-left: 20px;
+                font-family: Lexend;
+            }
+            .momo h3 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+            }
+            .momo_price {
+                margin-top: 48px;
+                margin-left: 20px;
+            }
+            .momo_price h3 {
+                font-family: Crimson Pro;
+                margin-top: 21px;
+            }
+            .waffle {
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            .waffle h1 {
+                margin-left: 20px;
+                font-family: Lexend;
+            }
+            .waffle h3 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+            }
+            .waffle_price {
+                margin-top: 48px;
+                margin-left: 10px;
+            }
+            .waffle_price h3 {
+                font-family: Crimson Pro;
+                margin-top: 21px;
+            }
+            .container-fluge {
+                width: 100%;
+                height: 94vh;
+                background: url(static/Cakes.png) no-repeat;
+                background-position: bottom;
+                background-size: cover;
+            }
+            .menu3 {
+                width: 50%;
+                height: 94vh;
+                background: url(static/Background.png);
+                border: none;
+                display: flex;
+            }
+            .cake {
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .cake h1 {
+                margin-left: 20px;
+                font-family: Lexend;
+            }
+            .cake h3 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+            }
+            .cake_price {
+                margin-top: 48px;
+                margin-left: 20px;
+            }
+            .cake_price h3 {
+                font-family: Crimson Pro;
+                margin-top: 21px;
+            }
+            .milkshake {
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .milkshake h1 {
+                font-family: Lexend;
+            }
+            .milkshake h3 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+            }
+            .milkshake_price {
+                margin-top: 48px;
+            }
+            .milkshake_price h3 {
+                font-family: Crimson Pro;
+                margin-top: 21px;
+            }
+            .combos {
+                width: 100%;
+                height: 103vh;
+                background: url(static/Combo.png);
+                background-position: center;
+                background-size: cover;
+            }
+            .menu4 {
+                width: 50%;
+                height: 103vh;
+                display: flex;
+                background: url(static/Background.png);
+                float: right;
+                border: none;
+            }
+            .combo {
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .combo h1 {
+                margin-left: 240px;
+                font-family: Lexend;
+            }
+            .combo h2 {
+                color: whitesmoke;
+                font-family: Pacifico;
+                margin-top: 10px;
+            }
+            .combo h4 {
+                font-family: Cormorant Garamond;
+                margin-top: 10px;
+            }
+            .combo_price {
+                margin-top: 20px;
+                margin-right: 40px;
+            }
+            .combo_price h2 {
+                font-family: Crimson Pro;
+                margin-top: 58px;
+            }
+            .button button {
+                width: 30vh;
+                height: 8vh;
+                font-size: 3vmin;
+                margin-top: 50px;
+                margin-left: 88vh;
+                border: 2px solid orange;
+                background-color: brown;
+                align-items: center;
+                justify-content: center;
+            }
+            .button a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .floating {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease-out;
+            }
+            .floating:hover {
+                transform: translateY(-10px);
+                background-color: #444;
+            }
+            .floating img {
+                width: 30px;
+                height: 30px;
+            }
+            footer {
+                width: 100%;
+                height: 90vh;
+                margin-top: 50px;
+                background: url(static/Footer_bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            footer img {
+                width: 20vh;
+                height: 15vh;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .details {
+                margin-left: 100px;
+                display: flex;
+            }
+            .contact {
+                font-size: 20px;
+                margin-left: 100px;
+                color: whitesmoke;
+            }
+            .contact img {
+                width: 70px;
+                height: 70px;
+                margin-left: 80px;
+            }
+            .contact h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .contact h5 {
+                font-family: PT Sans;
+                margin-top: 30px;
+            }
+            .home {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .home img {
+                width: 70px;
+                height: 70px;
+            }
+            .home h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .home h5 {
+                font-family: PT Sans;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .home a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .location {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .location img {
+                width: 70px;
+                height: 70px;
+            }
+            .location h2 {
+                margin-top: 50px;
+                margin-left: 5px;
+                font-size: 25px;
+            }
+            .social_icon {
+                display: flex;
+                margin-top: 20px;
+                margin-right: 150px;
+                align-items: center;
+                justify-content: center;
+            }
+            .social_icon img {
+                width: 30px;
+                height: 30px;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index"><img src="{% static 'Logo.png' %}" alt=""></a>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="menu">Menu</a></li>
+                        <li><a href="reservation">Reservation</a></li>
+                        <li><a href="contact_us">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header>
+            <div class="header-content">
+                <h1>OUR MENU</h1>
+                <h3>--- Where we all start. ---</h3>
+                <h4><a href="index">Home  </a> / Menu </h4>
+            </div>
+        </header>
+        <section>
+            <div class="desserts">
+                <div class="list">
+                    <h1>DESSERT's MENU</h1>
+                    <h3>Tiramisu</h3>
+                    <h5>A dessert of cake infused with a liquid such as coffee or rum, layered with mascarpone cheese, 
+                        and topped with cocoa or grated chocolate.
+                    </h5>
+                    <h3>Chocolate Mousse</h3>
+                    <h5>The ultimate chocolate fix. It's rich yet light and fluffy, and you're just five ingredients 
+                        away from these little pots of heaven!
+                    </h5>
+                    <h3>Red Velvet Trifle</h3>
+                    <h5>Luscious layers of red velvet cake, chocolate sauce, white chocolate cheesecake 
+                        and whipped topping make one decadent dessert that anyone can make!
+                    </h5>
+                    <h3>Delicious Apple Pie</h3>
+                    <h5>This recipe makes a caramelized lattice crust for sweet, buttery apple slices. 
+                        Serve warm with ice cream for the perfect holiday dessert!
+                    </h5>
+                    <h3>Mango Pudding</h3>
+                    <h5>Fruity, soft, luscious, topped w/ fresh cream & studded with fresh mango. A great dessert to try!</h5>
+                    <h3>Chocolate Delight</h3>
+                    <h5>Is a beautiful and easy layered dessert featuring a crunchy crust topped with 
+                        whipped cream cheese and chocolate pudding. A favorite at summer potlucks!
+                    </h5>
+                    <h3>Chocolate-Strawberry Cupcakes</h3>
+                    <h5>Rich and fluffy chocolate cupcakes topped with flavorful strawberry frosting and filled with a special surprise!</h5>
+                    <h3>Fantasy Fudge Brownies</h3>
+                    <h5>The Best, Fudgy ONE BOWL Cocoa Brownies! A special addition gives these brownies 
+                        a super fudgy centre without losing that crispy, crackly top!
+                    </h5>
+                    <h3>Cookies 'N' Cream Millionaire Shortbread</h3>
+                    <h5>A mixture of soft crunchy biscuit, gooey caramel and creamy chocolate.</h5>
+                    <h3>Homemade OREO Brownie Bites</h3>
+                    <h5>These little bites combine brownies with the delicious cookie center.</h5>
+                </div>
+                <div class="price">
+                    <h3>₹199</h3>
+                    <h3>₹179</h3>
+                    <h3>₹209</h3>
+                    <h3>₹159</h3>
+                    <h3>₹139</h3>
+                    <h3>₹169</h3>
+                    <h3>₹149</h3>
+                    <h3>₹129</h3>
+                    <h3>₹189</h3>
+                    <h3>₹179</h3>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="menu">
+                <div class="pizza">
+                    <h1>PIZZA's MENU</h1>
+                    <h3>Veg Supreme</h3>
+                    <h3>Margherita</h3>
+                    <h3>Double Chesse Margherita</h3>
+                    <h3>Deluxe Veggie</h3>
+                    <h3>Panner Makhani</h3>
+                    <h3>Tandoori Panner</h3>
+                    <h3>Chicken Supreme</h3>
+                    <h3>Chicken Pepperoni</h3>
+                    <h3>Chicken Sausage</h3>
+                    <h3>Chicken Tikka</h3>
+                    <h3>Triple Chicken Feast</h3>
+                    <h3>Schezwan Chicken</h3>
+                </div>
+                <div class="pizza_price">
+                    <h3>₹119</h3>
+                    <h3>₹119</h3>
+                    <h3>₹129</h3>
+                    <h3>₹119</h3>
+                    <h3>₹119</h3>
+                    <h3>₹139</h3>
+                    <h3>₹169</h3>
+                    <h3>₹149</h3>
+                    <h3>₹149</h3>
+                    <h3>₹159</h3>
+                    <h3>₹159</h3>
+                    <h3>₹169</h3>
+                </div>
+                <div class="burger">
+                    <h1>BURGER's MENU</h1>
+                    <h3>Cheesy Veg Burger</h3>
+                    <h3>BBQ Veg Burger</h3>
+                    <h3>Peri Peri Veg Burger</h3>
+                    <h3>Veg Tikka Burger</h3>
+                    <h3>Cheesy Panner Burger</h3>
+                    <h3>BBQ Panner Burger</h3>
+                    <h3>Peri Peri Panner Burger</h3>
+                    <h3>Panner Tikka Burger</h3>
+                    <h3>Cheesy Chicken Burger</h3>
+                    <h3>BBQ Chicken Burger</h3>
+                    <h3>Peri Peri Chicken Burger</h3>
+                    <h3>Chicken Tikka Burger</h3>
+                </div>
+                <div class="burger_price">
+                    <h3>₹79</h3>
+                    <h3>₹84</h3>
+                    <h3>₹89</h3>
+                    <h3>₹99</h3>
+                    <h3>₹89</h3>
+                    <h3>₹94</h3>
+                    <h3>₹99</h3>
+                    <h3>₹109</h3>
+                    <h3>₹119</h3>
+                    <h3>₹124</h3>
+                    <h3>₹129</h3>
+                    <h3>₹139</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="menu2">
+                <div class="momo">
+                    <h1>MOMO's MENU</h1>
+                    <h3>Steam Veg Momo</h3>
+                    <h3>Steam Panner Momo</h3>
+                    <h3>Steam Corn Cheese Momo</h3>
+                    <h3>Steam Chicken Momo</h3>
+                    <h3>Steam Chicken Cheese Momo</h3>
+                    <h3>Fried Veg Momo</h3>
+                    <h3>Fried Panner Momo</h3>
+                    <h3>Fried Corn Cheese Momo</h3>
+                    <h3>Fried Chicken Momo</h3>
+                    <h3>Fried Chicken Cheese Momo</h3>
+                </div>
+                <div class="momo_price">
+                    <h3>₹149</h3>
+                    <h3>₹159</h3>
+                    <h3>₹169</h3>
+                    <h3>₹179</h3>
+                    <h3>₹189</h3>
+                    <h3>₹154</h3>
+                    <h3>₹164</h3>
+                    <h3>₹174</h3>
+                    <h3>₹184</h3>
+                    <h3>₹194</h3>
+                </div>
+                <div class="waffle">
+                    <h1>WAFFLE's MENU</h1>
+                    <h3>Classic Waffle</h3>
+                    <h3>Double Waffle</h3>
+                    <h3>Pecan Waffle</h3>
+                    <h3>Pearl Sugar Waffle</h3>
+                    <h3>Buttermilk Waffle</h3>
+                    <h3>Southern Waffle</h3>
+                    <h3>Very Berry Waffle</h3>
+                    <h3>Strawberry Cheesecake</h3>
+                    <h3>Peanut Butter Chip Waffle</h3>
+                    <h3>Chocolate  Chip Waffle</h3>
+                </div>
+                <div class="waffle_price">
+                    <h3>₹99</h3>
+                    <h3>₹119</h3>
+                    <h3>₹129</h3>
+                    <h3>₹129</h3>
+                    <h3>₹139</h3>
+                    <h3>₹139</h3>
+                    <h3>₹119</h3>
+                    <h3>₹109</h3>
+                    <h3>₹109</h3>
+                    <h3>₹109</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluge">
+            <div class="menu3">
+                <div class="cake">
+                    <h1>CAKE's MENU</h1>
+                    <h3>Vanilla Cake</h3>
+                    <h3>Chocolate Cake</h3>
+                    <h3>Strawberry Cake</h3>
+                    <h3>Black Forest Cake</h3>
+                    <h3>Rich Black Forest Cake</h3>
+                    <h3>White Forest Cake</h3>
+                    <h3>Red Velvet Cake</h3>
+                    <h3>Butterscotch Cake</h3>
+                    <h3>Blueberry Cake</h3>
+                    <h3>Oreo Cake</h3>
+                    <h3>Kitkat Cake</h3>
+                    <h3>Blackcurrant Cake</h3>
+                    <h3>Rainbow Cake</h3>
+                    <h3>Honey Cake</h3>
+                    <h3>Death by Chocolate Cake</h3>
+                </div>
+                <div class="cake_price">
+                    <h3>₹400</h3>
+                    <h3>₹450</h3>
+                    <h3>₹550</h3>
+                    <h3>₹500</h3>
+                    <h3>₹600</h3>
+                    <h3>₹500</h3>
+                    <h3>₹600</h3>
+                    <h3>₹550</h3>
+                    <h3>₹600</h3>
+                    <h3>₹600</h3>
+                    <h3>₹600</h3>
+                    <h3>₹550</h3>
+                    <h3>₹800</h3>
+                    <h3>₹500</h3>
+                    <h3>₹700</h3>
+                </div>
+                <div class="milkshake">
+                    <h1>MILKSHAKE's MENU</h1>
+                    <h3>Oreo Shake</h3>
+                    <h3>Kitkat Shake</h3>
+                    <h3>Dark Fantasy Shake</h3>
+                    <h3>Vanilla Shake</h3>
+                    <h3>Chocolate Shake</h3>
+                    <h3>Strawberry Shake</h3>
+                    <h3>Butterscotch Shake</h3>
+                    <h3>Blackcurrant Shake</h3>
+                    <h3>Mango Shake</h3>
+                    <h3>Cold Boost Shake</h3>
+                    <h3>Pista Shake</h3>
+                    <h3>Apple Shake</h3>
+                    <h3>Pomegrante Shake</h3>
+                    <h3>Avacado Shake</h3>
+                    <h3>(Extra Scoop)</h3>
+                </div>
+                <div class="milkshake_price">
+                    <h3>₹99</h3>
+                    <h3>₹99</h3>
+                    <h3>₹99</h3>
+                    <h3>₹69</h3>
+                    <h3>₹89</h3>
+                    <h3>₹89</h3>
+                    <h3>₹99</h3>
+                    <h3>₹99</h3>
+                    <h3>₹99</h3>
+                    <h3>₹49</h3>
+                    <h3>₹99</h3>
+                    <h3>₹85</h3>
+                    <h3>₹89</h3>
+                    <h3>₹99</h3>
+                    <h3>₹20</h3>
+                </div>
+            </div>
+        </div>
+        <div class="combos">
+            <div class="menu4">
+                <div class="combo">
+                    <h1>COMBO's MENU</h1>
+                    <h2>Solo Combo</h2>
+                    <h4>(2pcs Wings + French Fries + Regular Coke)</h4>
+                    <h2>Double Combo</h2>
+                    <h4>(4pcs Wings + Regular Popcorn + French Fries + 2 Regular Coke)</h4>
+                    <h2>Best Combo</h2>
+                    <h4>(4pcs Wings + Medium Popcorn + 1 HC Chicken + Medium Coke)</h4>
+                    <h2>Perfect Combo</h2>
+                    <h4>(6pcs Crispy Wings + Medium Popcorn + 2 HC Chicken + 2 Regular Coke)</h4>
+                    <h2>Excellent Combo</h2>
+                    <h4>(8pcs Crispy Wings + Medium Popcorn + 2 HC Chicken + 5pc Nuggets + 2 Medium Coke)</h4>
+                    <h2>Ultra Combo</h2>
+                    <h4>(10pcs Grilled(r)Crispy Wings + 4pcs Chicken Strips + Medium Popcorn + 2 HC Chicken + French Fries + 
+                        3 Medium Coke )</h4>
+                    <h2>King Combo</h2>
+                    <h4>(12pcs Grilled(r)Crispy Wings + 8pcs Chicken Strips + Large Popcorn + 3 HC Chicken + 5pcs Chicken Nuggets +
+                        French Fries + 5 Medium Coke)</h4>
+                    <h2>Ultra King Combo</h2>
+                    <h4>(15pcs Grilled(r)Crispy Wings + 10pcs Chicken Strips + Large Popcorn + 5 HC Chicken + French Fries + 
+                        10pcs Chicken Nuggets + 6 Large Coke)</h4>
+                </div>
+                <div class="combo_price">
+                    <h2>₹109</h2>
+                    <h2>₹139</h2>
+                    <h2>₹199</h2>
+                    <h2>₹269</h2>
+                    <h2>₹349</h2>
+                    <h2>₹459</h2>
+                    <h2>₹529</h2>
+                    <h2>₹689</h2>
+                </div>
+            </div>
+        </div>
+        <div class="button-fluid">
+            <div class="button">
+                <button><a href="menu">Back to Top!!</a></button>
+            </div>
+        </div>
+        <div class="floating">
+            <a href="https://web.whatsapp.com/" class="floating-icon">
+                <img src="{% static 'Whatsapp.png' %}" alt="">
+            </a>
+        </div>
+        <footer>
+            <img src="{% static 'Logo.png' %}" alt="">
+            <div class="details">
+                <div class="contact col-md-4">
+                    <img src="{% static 'Mail.png' %}" alt="">
+                    <h2>Contact Details</h2>
+                    <h5>14/169E, Elayamuthur Pirivu,<br>
+                        Govt. Arts College Road,<br>
+                        Udumalpet - 642126</h5>
+                    <h5>aravinthjagan2309@gmail.com</h5>
+                    <h5>+91-6383734427</h5>
+                </div>
+                <div class="home col-md-4">
+                    <img src="{% static 'Menu.png' %}" alt="">
+                    <h2>Menu</h2>
+                    <h5><a href="contact_us">Contact</a></h5>
+                    <h5><a href="reservation">Reservation</a></h5>
+                    <h5><a href="menu">Menu</a></h5>
+                    <h5><a href="about">About</a></h5>
+                    <h5><a href="index">Home</a></h5>
+                </div>
+                <div class="location col-md-4">
+                    <img src="{% static 'Location.png' %}" alt="">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.64742185585!2d77.23837396826826!3d10.566704441800267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzA2LjMiTiA3N8KwMTQnMjEuNSJF!5e0!3m2!1sen!2sin!4v1713159985872!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="social_icon">
+                <a href="https://web.whatsapp.com/"><img src="{% static 'Whatsapp.png' %}" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'Instagram.png' %}" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'Facebook.png' %}" alt=""></a>
+            </div>
+        </footer>
+    </body>
+</html>

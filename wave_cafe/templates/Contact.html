@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wave - Contact</title>
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'Tittle.png' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .logo {
+                cursor: pointer;
+            }
+            .logo img {
+                width: 15vh;
+                height: 80px;
+            }
+            nav {
+                padding: 0 33px;
+                height: 80px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            nav ul {
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a {
+                font-size: 22px;
+                font-family: Lobster Two;
+                padding: 7px 13px;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            nav ul li a:hover {
+                color: orange;
+            }
+            header {
+                width: 100%;
+                height: 80vh;
+                background: url(static/Front.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content {
+                color: whitesmoke;
+                text-align: center;
+            }
+            .header-content img{
+                height: 20vh;
+                align-items: center;
+            }
+            .header-content h1 {
+                font-size: 7vmin;
+                font-family: Platypi;
+                color: whitesmoke;
+            }
+            .header-content h2 {
+                font-size: 30px;
+                margin-top: 10px;
+                font-family: Satisfy;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h3 {
+                margin-top: 20px;
+                font-size: 20px;
+                font-family: Raleway;
+                display: flex;
+                color: whitesmoke;
+                align-items: center;
+                justify-content: center;
+            }
+            .header-content h3 a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .header-content h3 a:hover {
+                color: orange;
+            }
+            .container-fluid {
+                width: 100%;
+                height: 100vh;
+                background: url(static/Veg.png);
+                background-position: bottom;
+                background-size: cover;
+            }
+            .call {
+                font-family: Josefin Sans;
+                padding-top: 10px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .touch {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .feel {
+                width: 60vh;
+                height: 60vh;
+                margin-top: 170px;
+                border: none;
+                background-color: orange;
+            }
+            .feel h1 {
+                color: brown;
+                padding-top: 30px;
+                padding-left: 20px;
+            }
+            .phone {
+                display: flex;
+            } 
+            .phone img {
+                width: 40px;
+                height: 40px;
+                margin-top: 60px;
+                margin-left: 30px;
+            }
+            .phone h5 {
+                font-family: Noto Serif;
+                color: whitesmoke;
+                padding-top: 50px;
+                padding-left: 30px;
+                font-size: 20px;
+            }
+            .address {
+                display: flex;
+            }
+            .address img {
+                width: 40px;
+                height: 40px;
+                margin-top: 65px;
+                margin-left: 30px;
+            }
+            .address h5 {
+                font-family: Noto Serif;
+                color: whitesmoke;
+                padding-top: 50px;
+                padding-left: 30px;
+                font-size: 20px;
+            }
+            .mail {
+                display: flex;
+            }
+            .mail img {
+                width: 40px;
+                height: 40px;
+                margin-top: 50px;
+                margin-left: 30px;
+            }
+            .mail h5 {
+                font-family: Noto Serif;
+                color: whitesmoke;
+                padding-top: 50px;
+                padding-left: 30px;
+                font-size: 20px;
+            }
+            .form {
+                width: 60vh;
+                height: 70vh;
+                background: url(static/Spoon.png);
+                background-position: right;
+                background-size: cover;
+                border: none;
+            }
+            .form h4 {
+                color: whitesmoke;
+                margin: 20px;
+            }
+            .form h1 {
+                margin: 20px;
+                font-size: 5vmin;
+                color: orange;
+            }
+            .form form { 
+                margin-top: 30px;
+                margin-left: 20px;
+            }
+            .form-field {
+                padding: 10px;
+            }
+            .form-field input {
+                width: 50vh;
+                height: 5vh;
+                border: none;
+            }
+            .form-field textarea {
+                width: 50vh;
+                height: 12vh;
+                border: none;
+            }
+            .button-field input {
+                width: 50vh;
+                height: 5vh;
+                margin-top: 20px;
+                margin-left: 10px;
+                border: none;
+                background-color: brown;
+                color: orange;
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .floating {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease-out;
+            }
+            .floating:hover {
+                transform: translateY(-10px);
+                background-color: #444;
+            }
+            .floating img {
+                width: 30px;
+                height: 30px;
+            }
+            footer {
+                width: 100%;
+                height: 90vh;
+                background: url(static/Footer_bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            footer img {
+                width: 20vh;
+                height: 15vh;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .details {
+                margin-left: 100px;
+                display: flex;
+            }
+            .contact {
+                font-size: 20px;
+                margin-left: 100px;
+                color: whitesmoke;
+            }
+            .contact img {
+                width: 70px;
+                height: 70px;
+                margin-left: 80px;
+            }
+            .contact h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .contact h5 {
+                font-family: PT Sans;
+                margin-top: 30px;
+            }
+            .home {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .home img {
+                width: 70px;
+                height: 70px;
+            }
+            .home h2 {
+                margin-top: 50px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .home h5 {
+                font-family: PT Sans;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .home a {
+                text-decoration: none;
+                color: whitesmoke;
+            }
+            .location {
+                font-size: 20px;
+                margin-left: 200px;
+                color: whitesmoke;
+            }
+            .location img {
+                width: 70px;
+                height: 70px;
+            }
+            .location h2 {
+                margin-top: 50px;
+                margin-left: 5px;
+                font-size: 25px;
+            }
+            .social_icon {
+                display: flex;
+                margin-top: 20px;
+                margin-right: 150px;
+                align-items: center;
+                justify-content: center;
+            }
+            .social_icon img {
+                width: 30px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index"><img src="{% static 'Logo.png' %}" alt=""></a>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="menu">Menu</a></li>
+                        <li><a href="reservation">Reservation</a></li>
+                        <li><a href="contact_us">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <header>
+            <div class="header-content">
+                <h1>CONTACT</h1>
+                <h2>-- Get in touch. --</h2>
+                <h3><a href="index">Home  </a> / Contact </h3>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="call">
+                <h2>Feel free to contact us with any questions, queries or concerns.</h2>
+                <h2>We're here to help and ensure your statisfaction.</h2>
+            </div>
+            <div class="touch">
+                <div class="feel col-lg-6">
+                    <h1>KEEP IN TOUCH</h1>
+                    <div class="phone">
+                        <img src="{% static 'Phone_Icon.png' %}" alt="">
+                        <h5>Franchise: +91-6383734427 <br> Booking: +91-6383734427</h5>
+                    </div>
+                    <div class="address">
+                        <img src="{% static 'Location_Icon.png' %}" alt="">
+                        <h5>14/169E, Elayamuthur Pirivu,<br> Govt. Arts College Road, <br>Udumalpet - 642 126</h5>
+                    </div>
+                    <div class="mail">
+                        <img src="{% static 'Mail_Icon.png' %}" alt="">
+                        <h5>aravinthjagan2309@gmail.com</h5>
+                    </div>
+                </div>
+                <div class="form col-lg-6">
+                    <h4>GET IN TOUCH</h4>
+                    <h1>Drop Us a Message!!</h1>
+                    <div class="contact-form">
+                        <form action="getData" method="POST">
+                            {% csrf_token %}
+                            <div class="form-field">
+                                <input type="text" name="name" placeholder="Name...">
+                            </div>
+                            <div class="form-field">
+                                <input type="email" name="mail" placeholder="Your Email...">
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" name="phone" placeholder="Your Phone No...">
+                            </div>
+                            <div class="form-field">
+                                <textarea type="text" name="message" placeholder="Your Message..."></textarea>
+                            </div>
+                            <div class="button-field">
+                                <input class="send-button" type="submit" value="SEND MESSAGE">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating">
+            <a href="https://web.whatsapp.com/" class="floating-icon">
+                <img src="{% static 'Whatsapp.png' %}" alt="">
+            </a>
+        </div>
+        <footer>
+            <img src="{% static 'Logo.png' %}" alt="">
+            <div class="details">
+                <div class="contact col-md-4">
+                    <img src="{% static 'Mail.png' %}" alt="">
+                    <h2>Contact Details</h2>
+                    <h5>14/169E, Elayamuthur Pirivu,<br>
+                        Govt. Arts College Road,<br>
+                        Udumalpet - 642126</h5>
+                    <h5>aravinthjagan2309@gmail.com</h5>
+                    <h5>+91-6383734427</h5>
+                </div>
+                <div class="home col-md-4">
+                    <img src="{% static 'Menu.png' %}" alt="">
+                    <h2>Menu</h2>
+                    <h5><a href="contact_us">Contact</a></h5>
+                    <h5><a href="reservation">Reservation</a></h5>
+                    <h5><a href="menu">Menu</a></h5>
+                    <h5><a href="about">About</a></h5>
+                    <h5><a href="index">Home</a></h5>
+                </div>
+                <div class="location col-md-4">
+                    <img src="{% static 'Location.png' %}" alt="">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.64742185585!2d77.23837396826826!3d10.566704441800267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzA2LjMiTiA3N8KwMTQnMjEuNSJF!5e0!3m2!1sen!2sin!4v1713159985872!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="social_icon">
+                <a href="https://web.whatsapp.com/"><img src="{% static 'Whatsapp.png' %}" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'Instagram.png' %}" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'Facebook.png' %}" alt=""></a>
+            </div>
+        </footer>
+    </body>
+</html>
