@@ -14,9 +14,9 @@ from .models import Contact_Data
 def index(request):
     mydata = Franchise_Data.objects.all()
     if (mydata != ""):
-        return render(request, "Index.html", {"franchise_data":mydata})
+        return render(request, "index.html", {"franchise_data":mydata})
     else:
-        return render(request, "Index.html")
+        return render(request, "index.html")
     
 def saveData(request):
     if request.method == "POST":
@@ -37,7 +37,7 @@ def saveData(request):
         obj.save()
         mydata = Franchise_Data.objects.all()
         return redirect("index")
-    return render(request, "Index.html")
+    return render(request, "index.html")
 
 def about(request):
     template = loader.get_template('About.html')
